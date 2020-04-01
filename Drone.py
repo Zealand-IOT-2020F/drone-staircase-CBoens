@@ -146,4 +146,18 @@ class Drone(object):
 #endregion
 
 
-#Advanced flightcontrols
+#region Advanced flightcontrols
+
+    def stepUp(self, x, y):
+        if (x >= 20 and x <= 40) and (y >= 20 and y <= 30):
+            result = self.sendMessage("up " + str(x))
+            time.sleep(5)
+            result = self.sendMessage("back " + str(y))
+            time.sleep(5)
+            result = self.sendMessage("down " + str(40))
+            #should stop at minimum flying altitude instead of landing
+
+
+        
+
+#endregion
