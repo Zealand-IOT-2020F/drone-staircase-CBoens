@@ -35,21 +35,21 @@ ymax3 = 0
 while ymax1 < 128:
     drone1.stepUp(30, 26)
     time.sleep(5)
-    ymax1 + 26
+    ymax1 += 26
 
 drone1.ccw(90)
 
 while ymax2 < 145:
     drone1.stepUp(30, 29)
     time.sleep(5)
-    ymax2 + 29
+    ymax2 += 29
 
 drone1.ccw(90)
 
 while ymax3 < 128:
     drone1.stepUp(30, 26)
     time.sleep(5)
-    ymax3 + 26
+    ymax3 += 26
 
 
 
